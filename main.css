@@ -1,0 +1,61 @@
+@keyframes blink-effect{        /*star 1-12 blink*/
+    50%{opacity: 0;}
+}
+
+@keyframes loader{              /*loader*/
+    100%{transform: rotate(1turn)}
+}
+
+
+body{
+    width: auto;
+    height: auto;
+    background-color: blue;
+}
+
+body > i{
+    font-size: 13px;
+    position: absolute;
+    color: white;
+}
+
+.star1{
+    margin-top: 150px;
+    margin-left: 200px;
+    animation: blink-effect 1.5s step-end infinite;
+}
+
+.star2{
+    margin-top: 300px;
+    margin-left: 800px;
+    animation: blink-effect 4s step-end infinite;
+}
+
+.star3{
+    margin-top: 100px;
+    margin-left: 700px;
+    animation: blink-effect 3.5s step-end infinite;
+}
+
+.star4{
+    margin-top: 280px;
+    margin-left: 600px;
+    animation: blink-effect 2.8s step-end infinite;
+}
+
+.star5{
+    margin-top: 180px;
+    margin-left: 430px;
+    animation: blink-effect 1s step-end infinite;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    margin-left: 500px;
+    margin-top: 300px;
+    width: 300px;
+    animation: loader 1s infinite linear;
+    position: absolute;
+  }
+
+  
